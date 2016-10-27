@@ -1,2 +1,4 @@
 local.vim
 plugins/plugged/*
+.netrwhist
+nerdtree_plugin
