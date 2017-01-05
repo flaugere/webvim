@@ -26,5 +26,6 @@ Plug 'marijnh/tern_for_vim', { 'do' : 'npm install' }
 Plug 'moll/vim-node'
 Plug 'syngan/vim-vimlint'
 Plug 'ynkdir/vim-vimlparser'
+Plug 'joonty/vim-phpqa'
 
 call plug#end()
