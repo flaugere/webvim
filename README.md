@@ -99,6 +99,12 @@ WebVim is only a Vim distribution with plugins and configuration, so all common 
 
 ### WebVim
 
+PHP-CS-FIXER
+<leader>pcf
+
+PHP QA
+<leader>pcs
+
 |                                                  | Command               | Mode | Context          |
 |--------------------------------------------------|-----------------------|:----:|------------------|
 | __Plugins__                                                                                        |

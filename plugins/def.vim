@@ -27,5 +27,6 @@ Plug 'moll/vim-node'
 Plug 'syngan/vim-vimlint'
 Plug 'ynkdir/vim-vimlparser'
 Plug 'joonty/vim-phpqa'
+Plug 'stephpy/vim-php-cs-fixer'
 
 call plug#end()
