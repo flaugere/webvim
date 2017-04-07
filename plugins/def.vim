@@ -23,6 +23,7 @@ Plug 'cakebaker/scss-syntax.vim'
 Plug 'othree/html5.vim'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 Plug 'marijnh/tern_for_vim', { 'do' : 'npm install' }
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'moll/vim-node'
 Plug 'syngan/vim-vimlint'
 Plug 'ynkdir/vim-vimlparser'
