@@ -27,6 +27,7 @@ let s:configSetting = s:vimDir.'/config/setting.vim'
 let s:configMapping = s:vimDir.'/config/mapping.vim'
 let s:configAbbrev  = s:vimDir.'/config/abbrev.vim'
 let s:configAutocmd  = s:vimDir.'/config/autocmd.vim'
+let s:configSyntastic  = s:vimDir.'/config/syntastic.vim'
 
 let s:userConfig  = s:vimDir.'/local.vim'
 
@@ -78,7 +79,7 @@ else
     exec ":source ".s:pluginDef
     exec ":source ".s:pluginConf
 
-
+    exec ":source ".s:configSyntastic
     " user configuration
     if filereadable(s:userConfig)
        "exec ":source ".s:userConfig
