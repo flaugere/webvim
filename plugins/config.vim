@@ -192,3 +192,6 @@ let g:used_javascript_libs = 'jquery,underscore,requirejs,chai,handlebars'
 
 " PHPCS "
 let g:syntastic_php_phpcs_args='--warning-severity=0'
+
+" NERDTreeTabs"
+map <Leader>n <plug>NERDTreeTabsToggle<CR>
