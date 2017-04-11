@@ -29,5 +29,6 @@ Plug 'ynkdir/vim-vimlparser'
 Plug 'stephpy/vim-php-cs-fixer'
 Plug 'vim-syntastic/syntastic'
 Plug 'chrisbra/csv.vim'
+Plug 'dkprice/vim-easygrep'
 
 call plug#end()
