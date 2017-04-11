@@ -26,8 +26,8 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'moll/vim-node'
 Plug 'syngan/vim-vimlint'
 Plug 'ynkdir/vim-vimlparser'
-Plug 'joonty/vim-phpqa'
 Plug 'stephpy/vim-php-cs-fixer'
 Plug 'vim-syntastic/syntastic'
+Plug 'chrisbra/csv.vim'
 
 call plug#end()

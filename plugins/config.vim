@@ -190,4 +190,5 @@ nmap <leader>P <Plug>yankstack_substitute_newer_paste
 
 let g:used_javascript_libs = 'jquery,underscore,requirejs,chai,handlebars'
 
-
+" PHPCS "
+let g:syntastic_php_phpcs_args='--warning-severity=0'
