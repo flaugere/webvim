@@ -82,7 +82,7 @@ else
     exec ":source ".s:configSyntastic
     " user configuration
     if filereadable(s:userConfig)
-       "exec ":source ".s:userConfig
+       exec ":source ".s:userConfig
     endif
 
 endif

@@ -4,7 +4,8 @@ call plug#begin($HOME.'/.vim/plugins/plugged')
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'jistr/vim-nerdtree-tabs'
-Plug 'goatslacker/mango.vim'
+"Plug 'goatslacker/mango.vim'
+Plug 'nightsense/seabird'
 Plug 'bling/vim-airline', { 'do' : $HOME.'/.vim/fonts/install' }
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'

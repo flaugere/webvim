@@ -1,0 +1,1 @@
+/home/alptis/.vim/plugins/plugged/seabird/colors/stormpetrel.vim
