@@ -12,15 +12,16 @@
 " [> NERDTree <]
 
 " on vim enter opens nerd tree
-function! OpenNerdTree()
-    let s:exclude = ['COMMIT_EDITMSG', 'MERGE_MSG']
-    if index(s:exclude, expand('%:t')) < 0
-        NERDTreeFind
-        exec "normal! \<c-w>\<c-w>"
-    endif
-endfunction
-autocmd VimEnter * call OpenNerdTree()
+"function! OpenNerdTree()
+    "let s:exclude = ['COMMIT_EDITMSG', 'MERGE_MSG']
+    "if index(s:exclude, expand('%:t')) < 0
+        "NERDTreeTabsOpen
+        "exec "normal! \<c-w>\<c-w>"
+    "endif
+"endfunction
+"autocmd VimEnter * call OpenNerdTree()
 
+let g:nerdtree_tabs_open_on_console_startup=2
 
 " nerdtree window resize
 let g:NERDTreeWinSize = 35
@@ -37,24 +38,24 @@ nnoremap <c-n> :NERDTreeToggle<cr>
 
 " helps quiting when there's no buffers left but NerdTree
 function! CheckLeftBuffers()
-  if tabpagenr('$') == 1
-    let i = 1
-    while i <= winnr('$')
-      if getbufvar(winbufnr(i), '&buftype') == 'help' ||
-          \ getbufvar(winbufnr(i), '&buftype') == 'quickfix' ||
-          \ exists('t:NERDTreeBufName') &&
-          \   bufname(winbufnr(i)) == t:NERDTreeBufName ||
-          \ bufname(winbufnr(i)) == '__Tag_List__'
-        let i += 1
-      else
-        break
-      endif
-    endwhile
-    if i == winnr('$') + 1
-      qall
+    if tabpagenr('$') == 1
+        let i = 1
+        while i <= winnr('$')
+            if getbufvar(winbufnr(i), '&buftype') == 'help' ||
+                        \ getbufvar(winbufnr(i), '&buftype') == 'quickfix' ||
+                        \ exists('t:NERDTreeBufName') &&
+                        \   bufname(winbufnr(i)) == t:NERDTreeBufName ||
+                        \ bufname(winbufnr(i)) == '__Tag_List__'
+                let i += 1
+            else
+                break
+            endif
+        endwhile
+        if i == winnr('$') + 1
+            qall
+        endif
+        unlet i
     endif
-    unlet i
-  endif
 endfunction
 autocmd BufEnter * call CheckLeftBuffers()
 
@@ -102,9 +103,9 @@ function! GetJslinters()
     let l:linters = [ ['eslint', '.eslintrc'], ['eslint', '.eslintrc.json'], ['eslint', '.eslintrc.js'], ['jshint', '.jshintrc'] ]
     let l:available = []
     for l:linter in l:linters
-       if executable(l:linter[0])
+        if executable(l:linter[0])
             call add(l:available, l:linter)
-       endif
+        endif
     endfor
     return l:available
 endfunction

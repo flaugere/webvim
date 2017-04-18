@@ -1,0 +1,1 @@
+/home/alptis/.vim/plugins/plugged/vim-colors-solarized/colors/solarized.vim
