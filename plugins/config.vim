@@ -21,7 +21,7 @@
 "endfunction
 "autocmd VimEnter * call OpenNerdTree()
 
-let g:nerdtree_tabs_open_on_console_startup=2
+let g:nerdtree_tabs_open_on_console_startup=1
 
 " nerdtree window resize
 let g:NERDTreeWinSize = 35
