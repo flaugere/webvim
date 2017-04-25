@@ -16,7 +16,7 @@ set number
 syntax on
 set background=dark
 set t_Co=256
-"let g:solarized_termcolors=256
+let g:solarized_termcolors=256
 colorscheme solarized
 highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE
