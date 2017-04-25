@@ -196,3 +196,8 @@ let g:syntastic_php_phpcs_args='--warning-severity=0'
 
 " NERDTreeTabs"
 map <Leader>n <plug>NERDTreeTabsToggle<CR>
+
+" [> CTRLP <]
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files']
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
+let g:ctrlp_user_command = ['.hg', 'hg --cwd %s locate -I .']
