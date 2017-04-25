@@ -31,5 +31,6 @@ Plug 'stephpy/vim-php-cs-fixer'
 Plug 'vim-syntastic/syntastic'
 Plug 'chrisbra/csv.vim'
 Plug 'dkprice/vim-easygrep'
+Plug 'leafgarland/typescript-vim'
 
 call plug#end()
