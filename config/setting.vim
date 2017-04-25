@@ -14,12 +14,13 @@ set number
 
 " syntax highlighting
 syntax on
-set background=dark
+"set background=dark
 set t_Co=256
 let g:solarized_termcolors=256
-colorscheme solarized
+let g:solarized_termtrans = 1
 highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE
+colorscheme solarized
 
 "indent
 set smartindent
